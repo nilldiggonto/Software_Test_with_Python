@@ -13,3 +13,5 @@ class PostTest(TestCase):
         expected = {'title':'Test', 'content': 'Tests Content'}
 
         self.assertDictEqual(expected, p.json())
+
+    
