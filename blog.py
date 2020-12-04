@@ -1,3 +1,4 @@
+from posts import Post
 
 class Blog:
     def __init__(self,title,author):
@@ -12,7 +13,7 @@ class Blog:
                                                 's' if len(self.posts) !=1 else '')
 
     def create_post(self,title,content):
-        pass
+        self.posts.append(Post(title,content))
 
     def json(self):
         pass
